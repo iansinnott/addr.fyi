@@ -7,6 +7,10 @@ for later viewing.
 
 This project is one that I thought of which I could use to dip my toes into the crypto dev world while still using extremely familiar technology. After all, there is no actual crypto tech used here--it's just grabbing info from a central API (Etherscan).
 
+## Cloudflare Workers
+
+NOTE: This projects makes use of cloudflare workers to proxy requests. The worker can be found [here](https://dash.cloudflare.com/55f6c019d4b035caaa2a30c4b7c9a11f/workers/edit/misty-meadow-7523) (must be logged in).
+
 ## Available Scripts
 
 In the project directory, you can run:
