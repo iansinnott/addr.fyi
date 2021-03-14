@@ -129,6 +129,7 @@ const Footer = () => {
             <a
               href="https://etherscan.io/privacyPolicy"
               target="_blank"
+              rel="noreferrer"
               className="font-medium text-gray-700 hover:underline">
               Privacy Policy
             </a>{" "}

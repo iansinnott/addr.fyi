@@ -8,6 +8,7 @@ interface IProps {
 }
 
 const AddressDetails = (props: IProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [activeTab, setActiveTab] = React.useState<ActiveTab>("balances");
   const tabs = ["Balances", "Transactions"];
 
