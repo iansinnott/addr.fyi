@@ -277,22 +277,6 @@ function App() {
                   </div>
                 </div>
               )}
-
-              <div className="">
-                <div className="text-left">
-                  <p className="text-sm text-gray-500">Data provided by Etherscan.io</p>
-                  <small className="text-gray-500 block text-xs">
-                    We won't store your data outside of your own browser. You can view Etherscan's{" "}
-                    <a
-                      href="https://etherscan.io/privacyPolicy"
-                      target="_blank"
-                      className="font-medium text-gray-700 underline">
-                      Privacy Policy
-                    </a>{" "}
-                    for information on how they handle data.
-                  </small>
-                </div>
-              </div>
             </form>
           </div>
         </div>

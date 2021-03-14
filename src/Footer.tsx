@@ -69,6 +69,9 @@ const About = (props: IAboutProps) => {
                   more sophisticated product for viewing information about various Ether addresses.
                 </p>
                 <p>Anyway, feel free to use it.</p>
+                <p>
+                  You can find the source code <a href="#">here</a>.
+                </p>
               </div>
             </div>
           </div>
@@ -89,26 +92,47 @@ const About = (props: IAboutProps) => {
 const Footer = () => {
   const [open, setOpen] = React.useState(false);
   return (
-    <footer className="py-4 sm:py-8 text-left relative max-w-xl mx-auto flex justify-between items-baseline">
-      <div className="links">
-        <a
-          href="#about"
-          onClick={(e) => {
-            e.preventDefault();
-            setOpen(true);
-          }}>
-          About
-        </a>
-        <About isOpen={open} onClose={() => setOpen(false)}></About>
+    <footer className="py-4 sm:py-8 text-left relative max-w-xl mx-auto">
+      <div className="flex justify-between items-baseline pb-8 border-b border-gray-300">
+        <div className="links">
+          <a
+            className="mr-4 hover:text-pink-800 hover:underline"
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              setOpen(true);
+            }}>
+            About
+          </a>
+          <a className="mr-4 hover:text-pink-800 hover:underline" href="#">
+            Source Code
+          </a>
+          <About isOpen={open} onClose={() => setOpen(false)}></About>
+        </div>
+        <small className="block text-gray-500">
+          A small project by{" "}
+          <a
+            className="text-pink-800 opacity-75 hover:opacity-100"
+            href="https://twitter.com/ian_sinn">
+            @ian_sinn
+          </a>
+        </small>
       </div>
-      <small className="block text-gray-500">
-        A small project by{" "}
-        <a
-          className="text-pink-800 opacity-75 hover:opacity-100"
-          href="https://twitter.com/ian_sinn">
-          @ian_sinn
-        </a>
-      </small>
+      <div className="pt-8">
+        <div className="text-left">
+          <p className="text-sm text-gray-500 mb-1">Data provided by Etherscan.io</p>
+          <small className="text-gray-500 block text-xs">
+            We won't store your data outside of your own browser. You can view Etherscan's{" "}
+            <a
+              href="https://etherscan.io/privacyPolicy"
+              target="_blank"
+              className="font-medium text-gray-700 hover:underline">
+              Privacy Policy
+            </a>{" "}
+            for information on how they handle data.
+          </small>
+        </div>
+      </div>
     </footer>
   );
 };
