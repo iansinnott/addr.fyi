@@ -3,6 +3,7 @@ import React from "react";
 import { debounce } from "throttle-debounce";
 import ethLogo from "./assets/eth-logo.svg";
 import cx from "classnames";
+import Footer from "./Footer";
 
 interface IEthResponse {
   status: "0" | "1";
@@ -296,6 +297,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
