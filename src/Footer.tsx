@@ -70,7 +70,8 @@ const About = (props: IAboutProps) => {
                 </p>
                 <p>Anyway, feel free to use it.</p>
                 <p>
-                  You can find the source code <a href="#">here</a>.
+                  You can find the source code{" "}
+                  <a href="https://github.com/iansinnott/addr.fyi">here</a>.
                 </p>
               </div>
             </div>
@@ -104,7 +105,9 @@ const Footer = () => {
             }}>
             About
           </a>
-          <a className="mr-4 hover:text-pink-800 hover:underline" href="#">
+          <a
+            className="mr-4 hover:text-pink-800 hover:underline"
+            href="https://github.com/iansinnott/addr.fyi">
             Source Code
           </a>
           <About isOpen={open} onClose={() => setOpen(false)}></About>
